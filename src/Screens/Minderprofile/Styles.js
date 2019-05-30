@@ -3,7 +3,7 @@ import { Colors } from '../../../Theme'
 
 export const Styles = StyleSheet.create({
   contentContainer: {
-    backgroundColor: Colors.backgroundPrimary
+    backgroundColor: Colors.backgroundPrimary,
   },
   profilePicture: {
     minHeight: undefined,

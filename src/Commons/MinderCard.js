@@ -1,8 +1,6 @@
 import React from 'react'
-import { Surface, Text, Headline, Button } from 'react-native-paper';
-import { Divider } from 'react-native-elements';
-import { StyleSheet } from 'react-native'
-import Spacer from '../Components/Spacer'
+import { Surface, Headline } from 'react-native-paper';
+import { StyleSheet, View } from 'react-native'
 import MinderDivider from './MinderDivider';
 
 export default class MinderCard extends React.Component {
@@ -11,7 +9,9 @@ export default class MinderCard extends React.Component {
       <Surface style={Styles.MinderCard}>
         <Headline style={Styles.MinderHeading}>{this.props.title}</Headline>
         <MinderDivider />
-        {this.props.children}
+        <View style={Styles.CardContent}>
+          {this.props.children}
+        </View>
       </Surface>
     )
   }
@@ -28,5 +28,9 @@ const Styles = StyleSheet.create({
   },
   MinderHeading: {
     marginTop: 15
+  },
+  CardContent: {
+    paddingStart: 10,
+    paddingEnd: 10
   }
 })

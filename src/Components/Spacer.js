@@ -6,8 +6,7 @@ export default class Spacer extends React.Component {
     return (
       <View
         style={{
-          marginTop: this.props.top,
-          marginBottom: this.props.bottom
+          marginTop: this.props.top
         }}></View>
     );
   }

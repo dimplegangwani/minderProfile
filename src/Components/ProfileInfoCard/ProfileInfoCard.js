@@ -48,7 +48,7 @@ export default class ProfileInfoCard extends React.Component {
             <Text style={Styles.statsText}>Cancelled Jobs</Text>
           </View>
         </View>
-        <Spacer top={15} bottom={10} />
+        <Spacer top={25} />
       </Surface>
     )
   }
