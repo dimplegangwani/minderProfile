@@ -5,13 +5,12 @@ export const Styles = StyleSheet.create({
     minHeight: 200,
     marginTop: -60,
     margin: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     flex: 1,
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 7,
-    position: 'relative'
   },
   likeIcon: {
     position: 'absolute',
