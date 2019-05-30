@@ -1,10 +1,17 @@
 import React from 'react'
-import { Text } from 'react-native-paper'
+import { Appbar } from 'react-native-paper';
 
 export default class HeaderBar extends React.Component {
   render() {
     return (
-     <Text>Heder Bar</Text>
+      <Appbar.Header>
+        <Appbar.BackAction
+          onPress={() => alert('go back function here!')}
+        />
+        <Appbar.Content
+          title="Minder Profile"
+        />
+      </Appbar.Header>
     );
   }
 }
