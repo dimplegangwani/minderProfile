@@ -8,6 +8,7 @@ import profileImage from '../../Assets/Images/minderPhoto.png'
 import AboutUser from '../../Components/AboutUser/AboutUser';
 import CommonContacts from '../../Components/CommonContacts/CommonContacts';
 import Spacer from '../../Components/Spacer';
+import CertVerifications from '../../Components/CertVerifications/CertVerifications';
 
 class MinderProfile extends React.Component {
   render() {
@@ -22,6 +23,8 @@ class MinderProfile extends React.Component {
           <AboutUser />
           <Spacer top={20} />
           <CommonContacts />
+          <Spacer top={20} />
+          <CertVerifications />
           <Spacer top={20} />
         </ScrollView>
       </View>
