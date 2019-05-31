@@ -9,6 +9,7 @@ import AboutUser from '../../Components/AboutUser/AboutUser';
 import CommonContacts from '../../Components/CommonContacts/CommonContacts';
 import Spacer from '../../Components/Spacer';
 import CertVerifications from '../../Components/CertVerifications/CertVerifications';
+import MinderReviews from '../../Components/Reviews/Reviews';
 
 class MinderProfile extends React.Component {
   render() {
@@ -26,11 +27,12 @@ class MinderProfile extends React.Component {
           <Spacer top={20} />
           <CertVerifications />
           <Spacer top={20} />
+          <MinderReviews />
+          <Spacer top={20} />
         </ScrollView>
       </View>
     )
   }
-
 }
 
 export default MinderProfile;

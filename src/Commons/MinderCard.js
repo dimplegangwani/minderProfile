@@ -20,9 +20,7 @@ export default class MinderCard extends React.Component {
 const Styles = StyleSheet.create({
   MinderCard: {
     backgroundColor: '#ffffff',
-    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
     elevation: 1,
     paddingBottom: 15
   },

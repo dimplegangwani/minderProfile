@@ -5,16 +5,15 @@ import { StyleSheet } from 'react-native'
 export default class MinderDivider extends React.Component {
   render() {
     return (
-      <Divider style={Styles.MinderDivider} />
+      <Divider style={this.Styles.MinderDivider} />
     );
   }
+  Styles = StyleSheet.create({
+    MinderDivider: {
+      backgroundColor: 'grey',
+      width: (typeof (this.props.width) === 'undefined') ? '90%' : this.props.width,
+      marginTop: 13,
+      marginBottom: 13,
+    }
+  })
 }
-
-const Styles = StyleSheet.create({
-  MinderDivider: {
-    backgroundColor: 'grey',
-    width: '90%',
-    marginTop: 13,
-    marginBottom: 13,
-  }
-})
