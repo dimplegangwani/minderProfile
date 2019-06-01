@@ -1,5 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
+console.log('dimens', Math.round(Dimensions.get('window').width))
 export const Styles = StyleSheet.create({
   footnote: {
     color: 'grey',
@@ -10,20 +11,18 @@ export const Styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    padding: 5
   },
   gridItem: {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    width: 80,
-    height: 110,
-    margin: 5
+    width: Math.round(Dimensions.get('window').width / 4) - 10,
+    height: 110
   },
   itemImage: {
     position: 'relative',
-    width: 80,
-    height: 80,
+    width: undefined,
+    height: undefined,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -32,8 +31,8 @@ export const Styles = StyleSheet.create({
   },
   verifiedIcon: {
     position: 'absolute',
-    bottom: 7,
-    right: 7
+    bottom: 0,
+    right: 0
   },
   itemText: {
     textAlign: 'center'

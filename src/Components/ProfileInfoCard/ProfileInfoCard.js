@@ -16,14 +16,19 @@ export default class ProfileInfoCard extends React.Component {
     repeatBookings: 26,
     cancelledJobs: 1
   }
+
   render() {
+    const {
+      displayName, distance, locationName, responseRate,
+      completedJobs, repeatBookings, cancelledJobs
+    } = this.props.profileInfo
     return (
       <Surface style={Styles.profileInfoCard}>
         <LikeIcon styles={Styles.likeIcon} />
-        <Headline>Samantha J</Headline>
+        <Headline>{displayName}</Headline>
         <View style={Styles.userMeta}>
-          <Text style={Styles.location}>{this.state.location}</Text>
-          <Text style={Styles.responseRate}>{this.state.responseRate}% Response Rate</Text>
+          <Text style={Styles.location}>{distance} {locationName}</Text>
+          <Text style={Styles.responseRate}>{responseRate}% Response Rate</Text>
         </View>
         <Rating
           readonly
@@ -36,15 +41,15 @@ export default class ProfileInfoCard extends React.Component {
         <Divider style={Styles.divider} />
         <View style={Styles.userStats}>
           <View style={Styles.stats}>
-            <Text>123</Text>
+            <Text>{completedJobs}</Text>
             <Text style={Styles.statsText}>Completed Jobs</Text>
           </View>
           <View style={Styles.stats}>
-            <Text>23</Text>
+            <Text>{repeatBookings}</Text>
             <Text style={Styles.statsText}>Repeat Booking</Text>
           </View>
           <View style={Styles.stats}>
-            <Text>123</Text>
+            <Text>{cancelledJobs}</Text>
             <Text style={Styles.statsText}>Cancelled Jobs</Text>
           </View>
         </View>
