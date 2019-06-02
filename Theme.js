@@ -6,9 +6,17 @@ export const Colors = {
   backgroundPrimary: '#ECECEC',
   green: '#31CB94',
   primaryText: '#484549',
-  secondaryText: '#D8D8D8',
+  secondaryText: '#808080',
   purple: '#9B3FD9',
-  mutedText: '#000'
+  mutedText: 'grey',
+  red: 'red'
+}
+
+export const Extras = {
+  bodyText: {
+    fontSize: 15,
+    lineHeight: 22
+  }
 }
 
 export const theme = {

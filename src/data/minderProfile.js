@@ -5,6 +5,7 @@ export const images = {
 export const minder = {
   firstName: "Samantha",
   lastName: "J",
+  rating: 4.5,
   displayName: "Samantha J.",
   profileURL: require('../Assets/Images/minderPhoto.png'),
   distance: "Near",

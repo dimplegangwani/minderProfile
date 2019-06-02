@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 import { Styles } from './Styles'
 import { Avatar } from 'react-native-paper';
 import { Rating } from 'react-native-elements';
-import { Colors } from '../../../Theme'
+import { Colors, Extras } from '../../../Theme'
 
 export default class ReviewCard extends React.Component {
   render() {
@@ -25,9 +25,10 @@ export default class ReviewCard extends React.Component {
             imageSize={25}
             tintColor="white"
             type='custom'
+            ratingBackgroundColor='lightgrey'
             style={Styles.rating}
           />
-          <Text>{review.review}</Text>
+          <Text style={Extras.bodyText}>{review.review}</Text>
         </View>
       </View>
     );

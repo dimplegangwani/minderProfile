@@ -9,17 +9,16 @@ import Spacer from '../../Components/Spacer';
 import CertVerifications from '../../Components/CertVerifications/CertVerifications';
 import MinderReviews from '../../Components/Reviews/Reviews';
 import { minder } from '../../data/minderProfile';
+import { Strings } from '../../Localization/Strings';
 
 class MinderProfile extends React.Component {
-  state = {
-    profileData: {},
-    url: require("../../Assets/Images/minderPhoto.png")
-  }
-
-
   render() {
     if (!minder.profileURL) {
-      return (<View><Text>Loading...</Text></View>)
+      return (
+        <View>
+          <Text>{Strings.loading}</Text>
+        </View>
+      )
     }
     else {
       const { firstName, about } = minder
@@ -43,13 +42,6 @@ class MinderProfile extends React.Component {
         </View>
       )
     }
-
-  }
-
-  componentDidMount = () => {
-    this.setState({
-      profileData: minder
-    })
   }
 }
 

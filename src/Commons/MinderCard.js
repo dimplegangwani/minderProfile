@@ -25,7 +25,8 @@ const Styles = StyleSheet.create({
     paddingBottom: 15
   },
   MinderHeading: {
-    marginTop: 15
+    marginTop: 15,
+    fontSize: 23
   },
   CardContent: {
     paddingStart: 10,
