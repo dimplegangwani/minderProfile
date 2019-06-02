@@ -30,14 +30,14 @@ export const minder = {
     }
   ],
   certs: [
-    { verifiedWWWCC: true },
-    { verifiedID: true },
-    { verifiedFA: false },
-    { verifiedPC: false },
-    { verifiedEmail: true },
-    { verifiedBank: true },
-    { verifiedPhone: true },
-    { verifiedFacebook: true }
+    { name: "verified WWWCC", status: true, iconURL: require("../Assets/Images/wwcc.png") },
+    { name: "verified ID", status: true, iconURL: require("../Assets/Images/id-check.png") },
+    { name: "verified FA", status: false, iconURL: require("../Assets/Images/first-aid.png") },
+    { name: "verified PC", status: false, iconURL: require("../Assets/Images/police-check.png") },
+    { name: "verified Email", status: true, iconURL: require("../Assets/Images/verified-email.png") },
+    { name: "verified Bank", status: true, iconURL: require("../Assets/Images/verified-bank.png") },
+    { name: "verified Phone", status: true, iconURL: require("../Assets/Images/verified-phone.png") },
+    { name: "verified Facebook", status: true, iconURL: require("../Assets/Images/verified-facebook.png") }
   ],
   reviews: [
     {

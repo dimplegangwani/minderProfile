@@ -35,9 +35,9 @@ class MinderProfile extends React.Component {
             <Spacer top={20} />
             <CommonContacts commonFriends={minder.commonFriends} />
             <Spacer top={20} />
-            <CertVerifications />
+            <CertVerifications certifications={minder.certs} />
             <Spacer top={20} />
-            <MinderReviews />
+            <MinderReviews reviews={minder.reviews} />
             <Spacer top={20} />
           </ScrollView>
         </View>

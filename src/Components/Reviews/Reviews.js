@@ -12,10 +12,11 @@ export default class MinderReviews extends React.Component {
     return (
       <MinderCard title="Reviews">
         <View style={Styles.reviewCards}>
-          <ReviewCard />
-          <MinderDivider width='100%' />
-          <ReviewCard />
-          <MinderDivider width='100%' />
+          {this.props.reviews.map((review, i) =>
+            <React.Fragment key={i}>
+              <ReviewCard review={review} />
+              <MinderDivider width='100%' />
+            </React.Fragment>)}
         </View>
         <MinderButton onPress={() => console.log('button pressed')}>
           Read All
