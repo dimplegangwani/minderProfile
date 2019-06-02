@@ -2,6 +2,7 @@ import React from 'react'
 import { Surface, Headline } from 'react-native-paper';
 import { StyleSheet, View } from 'react-native'
 import MinderDivider from './MinderDivider';
+import { Colors } from '../../Theme'
 
 export default class MinderCard extends React.Component {
   render() {
@@ -25,7 +26,10 @@ const Styles = StyleSheet.create({
     paddingBottom: 15
   },
   MinderHeading: {
-    marginTop: 15
+    marginTop: 15,
+    fontSize: 23,
+    fontFamily: 'cabin-bold',
+    color: Colors.black
   },
   CardContent: {
     paddingStart: 10,

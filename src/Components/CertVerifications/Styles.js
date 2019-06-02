@@ -5,12 +5,13 @@ export const Styles = StyleSheet.create({
   footnote: {
     color: 'grey',
     textAlign: 'left',
+    padding: 8
   },
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'flex-start',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   gridItem: {
     alignItems: 'center',
@@ -31,10 +32,12 @@ export const Styles = StyleSheet.create({
   },
   verifiedIcon: {
     position: 'absolute',
-    bottom: 0,
-    right: 0
+    bottom: -4,
+    right: -4
   },
   itemText: {
-    textAlign: 'center'
+    textAlign: 'center',
+    marginTop: 14,
+    height: 45
   }
 });

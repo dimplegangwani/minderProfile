@@ -1,5 +1,6 @@
 import React from 'react'
 import { Appbar } from 'react-native-paper';
+import { Strings } from '../../Localization/Strings';
 
 export default class HeaderBar extends React.Component {
   render() {
@@ -9,7 +10,7 @@ export default class HeaderBar extends React.Component {
           onPress={() => alert('go back function here!')}
         />
         <Appbar.Content
-          title="Minder Profile"
+          title={Strings.headerTitle}
         />
       </Appbar.Header>
     );

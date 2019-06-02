@@ -13,7 +13,7 @@ export default class MinderDivider extends React.Component {
       backgroundColor: 'grey',
       width: (typeof (this.props.width) === 'undefined') ? '90%' : this.props.width,
       marginTop: 13,
-      marginBottom: 13,
+      marginBottom: 13
     }
   })
 }
