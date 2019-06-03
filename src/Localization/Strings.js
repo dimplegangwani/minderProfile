@@ -8,6 +8,7 @@ export const Strings = {
   cancelledJobs: "Cancelled Jobs",
   about: "About",
   readMore: "Read More",
+  readLess: "Read Less",
   YouBothKnow: "You both know",
   certificationsAndVerif: "Certificates and Verification",
   availableOn: "Available upon request",
