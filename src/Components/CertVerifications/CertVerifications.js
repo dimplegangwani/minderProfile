@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import MinderCard from '../../Commons/MinderCard';
-import MinderDivider from '../../Commons/MinderDivider';
 import { Styles } from './Styles'
 import { Icon } from 'react-native-elements';
 import { Avatar } from 'react-native-paper';

@@ -2,7 +2,11 @@ import { StyleSheet } from 'react-native';
 import { Colors } from '../../../Theme'
 
 export const Styles = StyleSheet.create({
-  heading: { marginTop: 20, marginBottom: 5 },
+  heading: {
+    marginTop: 20,
+    marginBottom: 5,
+    fontFamily: 'cabin-bold'
+  },
   profileInfoCard: {
     minHeight: 200,
     marginTop: -60,

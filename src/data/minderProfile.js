@@ -1,7 +1,3 @@
-export const images = {
-  profile: require('../Assets/Images/minderPhoto.png'),
-}
-
 export const minder = {
   firstName: "Samantha",
   lastName: "J",
@@ -31,10 +27,10 @@ export const minder = {
     }
   ],
   certs: [
-    { name: "verified WWWCC", status: true, iconURL: require("../Assets/Images/wwcc.png") },
-    { name: "verified ID", status: true, iconURL: require("../Assets/Images/id-check.png") },
-    { name: "verified FA", status: false, iconURL: require("../Assets/Images/first-aid.png") },
-    { name: "verified PC", status: false, iconURL: require("../Assets/Images/police-check.png") },
+    { name: "WWWCC", status: true, iconURL: require("../Assets/Images/wwcc.png") },
+    { name: "ID check", status: true, iconURL: require("../Assets/Images/id-check.png") },
+    { name: "First Aid*", status: false, iconURL: require("../Assets/Images/first-aid.png") },
+    { name: "Police Check", status: false, iconURL: require("../Assets/Images/police-check.png") },
     { name: "verified Email", status: true, iconURL: require("../Assets/Images/verified-email.png") },
     { name: "verified Bank", status: true, iconURL: require("../Assets/Images/verified-bank.png") },
     { name: "verified Phone", status: true, iconURL: require("../Assets/Images/verified-phone.png") },
